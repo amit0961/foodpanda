@@ -17,6 +17,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// ============== Category Section ================ //
+
+Route::get('/category/', 'CategoryController@index')->name('category.index');
+Route::get('/category/add', 'CategoryController@create')->name('category.create');
+Route::post('/category/store', 'CategoryController@store')->name('category.store');
+
+// ============== Category Section ================ //
+
+
+
+
+
+
+
+
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
